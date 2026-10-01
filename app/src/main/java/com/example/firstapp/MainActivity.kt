@@ -16,6 +16,7 @@ import com.example.firstapp.ui.theme.TataLetakColumn
 import com.example.firstapp.ui.theme.TataLetakRow
 import com.example.firstapp.ui.theme.TataletakBox
 import com.example.firstapp.ui.theme.TataletakBoxColumnRow
+import com.example.firstapp.ui.theme.TataletakColumnRow
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +27,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize())
                 { innerPadding ->
-                    TataletakBox(
+                    TataletakColumnRow(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
