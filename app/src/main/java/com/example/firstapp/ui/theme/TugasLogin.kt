@@ -29,13 +29,12 @@ import com.example.firstapp.R
 import org.w3c.dom.Text
 
 @Composable
-fun MainDashboard(modifier: Modifier = Modifier) {
+fun MainDashboard(modifier: Modifier = Modifier)
+{
     val gambar = painterResource(id = R.drawable.background)
     val logo = painterResource(id = R.drawable.umy)
-
-    Box(
-        modifier = modifier.fillMaxSize()
-    ) {
+    Box (modifier = Modifier)
+    {
         Image(
             painter = gambar,
             contentDescription = "Background",
@@ -47,25 +46,25 @@ fun MainDashboard(modifier: Modifier = Modifier) {
                 .fillMaxSize()
                 .padding(24.dp),
             contentAlignment = Alignment.Center
-        ) {
+        ){
             Column(
+                modifier = Modifier,
                 horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Text(
-                    text = "Login",
-                    fontSize = 24.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = Color.Blue
-                )
-                Text(
-                    text = "Ini Adalah Halaman Login."
-                )
+            )
+            {
+                Text(text = "Login", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = Color.Blue)
+                Text(text = "Ini Adalah Halaman Login.",)
                 Image(
                     painter = logo,
                     contentDescription = "Logo UMY",
                     modifier = Modifier.size(280.dp),
                     contentScale = ContentScale.Fit
                 )
+
+                Text(text = "Nama", fontWeight = FontWeight.Bold, color = Color.Red)
+                Text(text = "Muhammad Rasyid Ridha Aqimuddin", fontWeight = FontWeight.Bold, color = Color.Blue)
+                Text(text = "20240140151", fontSize = 25.sp ,fontWeight = FontWeight.Bold)
+
             }
         }
     }
