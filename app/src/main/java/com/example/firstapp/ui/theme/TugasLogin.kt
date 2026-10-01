@@ -22,6 +22,7 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.AlignmentLine
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -31,6 +32,14 @@ import org.w3c.dom.Text
 @Composable
 fun MainDashboard(modifier: Modifier = Modifier)
 {
+    val titleLogin = stringResource(id = R.string.title_login)
+    val subtitleLogin = stringResource(id = R.string.subtitle_login)
+    val labelNama = stringResource(id = R.string.label_nama)
+    val namaMahasiswa = stringResource(id = R.string.nama_mahasiswa)
+    val nimMahasiswa = stringResource(id = R.string.nim_mahasiswa)
+    val cdBackground = stringResource(id = R.string.cd_background)
+    val cdLogoUmy = stringResource(id = R.string.cd_logo_umy)
+    val cdJokowi = stringResource(id = R.string.cd_jokowi)
     val gambar = painterResource(id = R.drawable.background)
     val logo = painterResource(id = R.drawable.umy)
     val jokowi =  painterResource(id = R.drawable.jokowi)
@@ -38,7 +47,7 @@ fun MainDashboard(modifier: Modifier = Modifier)
     {
         Image(
             painter = gambar,
-            contentDescription = "Background",
+            contentDescription = cdBackground,
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.FillBounds
         )
@@ -53,24 +62,24 @@ fun MainDashboard(modifier: Modifier = Modifier)
                 horizontalAlignment = Alignment.CenterHorizontally
             )
             {
-                Text(text = "Login", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = Color.Blue)
-                Text(text = "Ini Adalah Halaman Login.",)
+                Text(text = titleLogin, fontSize = 24.sp, fontWeight = FontWeight.Bold, color = Color.Blue)
+                Text(text = subtitleLogin,)
                 Image(
                     painter = logo,
-                    contentDescription = "Logo UMY",
+                    contentDescription = cdLogoUmy,
                     modifier = Modifier.size(280.dp),
                     contentScale = ContentScale.Fit
                 )
 
-                Text(text = "Nama", fontWeight = FontWeight.Bold, color = Color.Red)
-                Text(text = "Muhammad Rasyid Ridha Aqimuddin", fontWeight = FontWeight.Bold, color = Color.Blue)
-                Text(text = "20240140151", fontSize = 25.sp ,fontWeight = FontWeight.Bold)
+                Text(text = labelNama, fontWeight = FontWeight.Bold, color = Color.Red)
+                Text(text = namaMahasiswa, fontWeight = FontWeight.Bold, color = Color.Blue)
+                Text(text = nimMahasiswa, fontSize = 25.sp ,fontWeight = FontWeight.Bold)
 
                 Spacer(modifier = Modifier.height(60.dp))
 
                 Image(
                     painter = jokowi,
-                    contentDescription = "Jokowi is Perfect",
+                    contentDescription = cdJokowi,
                     modifier = Modifier
                         .size(280.dp)
                         .clip(CircleShape)

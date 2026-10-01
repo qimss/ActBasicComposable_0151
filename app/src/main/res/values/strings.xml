@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">FirstApp</string>
+    <string name="title_login">Login</string>
+    <string name="subtitle_login">Ini Adalah Halaman Login.</string>
+    <string name="label_nama">Nama</string>
+    <string name="nama_mahasiswa">Muhammad Rasyid Ridha Aqimuddin</string>
+    <string name="nim_mahasiswa">20240140151</string>
+    <string name="cd_background">Background</string>
+    <string name="cd_logo_umy">Logo UMY</string>
+    <string name="cd_jokowi">Foto Profil</string>
 </resources>
