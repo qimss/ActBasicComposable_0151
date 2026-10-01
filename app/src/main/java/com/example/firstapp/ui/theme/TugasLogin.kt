@@ -31,6 +31,7 @@ import org.w3c.dom.Text
 @Composable
 fun MainDashboard(modifier: Modifier = Modifier) {
     val gambar = painterResource(id = R.drawable.background)
+    val logo = painterResource(id = R.drawable.umy)
 
     Box(
         modifier = modifier.fillMaxSize()
@@ -58,6 +59,12 @@ fun MainDashboard(modifier: Modifier = Modifier) {
                 )
                 Text(
                     text = "Ini Adalah Halaman Login."
+                )
+                Image(
+                    painter = logo,
+                    contentDescription = "Logo UMY",
+                    modifier = Modifier.size(280.dp),
+                    contentScale = ContentScale.Fit
                 )
             }
         }
