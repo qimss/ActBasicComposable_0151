@@ -12,6 +12,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.firstapp.ui.theme.FirstAppTheme
+import com.example.firstapp.ui.theme.TataLetakColumn
+import com.example.firstapp.ui.theme.TataLetakRow
+import com.example.firstapp.ui.theme.TataletakBox
 import com.example.firstapp.ui.theme.TataletakBoxColumnRow
 
 class MainActivity : ComponentActivity() {
@@ -20,8 +23,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             FirstAppTheme {
-                Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
-                    TataletakBoxColumnRow(
+                Scaffold(
+                    modifier = Modifier.fillMaxSize())
+                { innerPadding ->
+                    TataLetakRow(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
