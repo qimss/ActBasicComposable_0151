@@ -33,6 +33,7 @@ fun MainDashboard(modifier: Modifier = Modifier)
 {
     val gambar = painterResource(id = R.drawable.background)
     val logo = painterResource(id = R.drawable.umy)
+    val jokowi =  painterResource(id = R.drawable.jokowi)
     Box (modifier = Modifier)
     {
         Image(
@@ -64,6 +65,24 @@ fun MainDashboard(modifier: Modifier = Modifier)
                 Text(text = "Nama", fontWeight = FontWeight.Bold, color = Color.Red)
                 Text(text = "Muhammad Rasyid Ridha Aqimuddin", fontWeight = FontWeight.Bold, color = Color.Blue)
                 Text(text = "20240140151", fontSize = 25.sp ,fontWeight = FontWeight.Bold)
+
+                Spacer(modifier = Modifier.height(60.dp))
+
+                Image(
+                    painter = jokowi,
+                    contentDescription = "Jokowi is Perfect",
+                    modifier = Modifier
+                        .size(280.dp)
+                        .clip(CircleShape)
+                        .background(Color.White)
+                        .border(
+                            width = 5.dp,
+                            shape = CircleShape,
+                            color = Color.White
+                        ),
+                    contentScale = ContentScale.Fit
+
+                )
 
             }
         }
