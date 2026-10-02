@@ -7,16 +7,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.firstapp.ui.theme.FirstAppTheme
 import com.example.firstapp.ui.theme.MainDashboard
-import com.example.firstapp.ui.theme.TataLetakColumn
-import com.example.firstapp.ui.theme.TataLetakRow
-import com.example.firstapp.ui.theme.TataletakBox
-import com.example.firstapp.ui.theme.TataletakBoxColumnRow
-import com.example.firstapp.ui.theme.TataletakColumnRow
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
