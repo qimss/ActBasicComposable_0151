@@ -45,7 +45,7 @@ fun MainDashboard(modifier: Modifier = Modifier)
     val logo = painterResource(id = R.drawable.umy)
     val jokowi = painterResource(id = R.drawable.jokowi)
 
-    Box (modifier = Modifier)
+    Box (modifier = modifier.fillMaxSize())
     {
         Image(
             painter = gambar,
