@@ -28,17 +28,23 @@ import com.example.firstapp.R
 @Composable
 fun MainDashboard(modifier: Modifier = Modifier)
 {
+    // String Resources
     val titleLogin = stringResource(id = R.string.title_login)
     val subtitleLogin = stringResource(id = R.string.subtitle_login)
     val labelNama = stringResource(id = R.string.label_nama)
     val namaMahasiswa = stringResource(id = R.string.nama_mahasiswa)
     val nimMahasiswa = stringResource(id = R.string.nim_mahasiswa)
+
+    // Content Descriptions
     val cdBackground = stringResource(id = R.string.cd_background)
     val cdLogoUmy = stringResource(id = R.string.cd_logo_umy)
     val cdJokowi = stringResource(id = R.string.cd_jokowi)
+
+    // Drawable Resources
     val gambar = painterResource(id = R.drawable.background)
     val logo = painterResource(id = R.drawable.umy)
-    val jokowi =  painterResource(id = R.drawable.jokowi)
+    val jokowi = painterResource(id = R.drawable.jokowi)
+
     Box (modifier = Modifier)
     {
         Image(
