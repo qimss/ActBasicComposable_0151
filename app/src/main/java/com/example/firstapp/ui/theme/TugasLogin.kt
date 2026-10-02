@@ -47,35 +47,52 @@ fun MainDashboard(modifier: Modifier = Modifier)
     {
         Image(
             painter = gambar,
-            contentDescription = cdBackground,
-            modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.FillBounds
+            contentDescription =
+                cdBackground,
+            modifier =
+                Modifier.fillMaxSize(),
+            contentScale =
+                ContentScale.FillBounds
         )
         Box(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(24.dp),
-            contentAlignment = Alignment.Center
+            contentAlignment =
+                Alignment.Center
         ){
             Column(
-                modifier = Modifier,
-                horizontalAlignment = Alignment.CenterHorizontally
+                modifier =
+                    Modifier,
+                horizontalAlignment =
+                    Alignment.CenterHorizontally
             )
             {
-                Text(text = titleLogin, fontSize = 24.sp, fontWeight = FontWeight.Bold, color = Color.Blue)
-                Text(text = subtitleLogin,)
+                Text(text = titleLogin,
+                    fontSize = 24.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Blue)
+                Text(text = subtitleLogin)
                 Image(
                     painter = logo,
                     contentDescription = cdLogoUmy,
                     modifier = Modifier.size(280.dp),
                     contentScale = ContentScale.Fit
                 )
+                Text(text = labelNama,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Red)
 
-                Text(text = labelNama, fontWeight = FontWeight.Bold, color = Color.Red)
-                Text(text = namaMahasiswa, fontWeight = FontWeight.Bold, color = Color.Blue)
-                Text(text = nimMahasiswa, fontSize = 25.sp ,fontWeight = FontWeight.Bold)
+                Text(text = namaMahasiswa,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Blue)
 
-                Spacer(modifier = Modifier.height(60.dp))
+                Text(text = nimMahasiswa,
+                    fontSize = 25.sp ,
+                    fontWeight = FontWeight.Bold)
+
+                Spacer(modifier =
+                    Modifier.height(60.dp))
 
                 Image(
                     painter = jokowi,
@@ -89,10 +106,9 @@ fun MainDashboard(modifier: Modifier = Modifier)
                             shape = CircleShape,
                             color = Color.White
                         ),
-                    contentScale = ContentScale.Fit
-
+                    contentScale =
+                        ContentScale.Fit
                 )
-
             }
         }
     }
